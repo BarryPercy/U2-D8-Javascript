@@ -11,7 +11,7 @@ for(i=0;i<parseInt(arrayToReverse.length/2);i++){
     arrayToReverse[i]=arrayToReverse[arrayToReverse.length-i-1];
     arrayToReverse[arrayToReverse.length-i-1]=temp;
 }
-console.log(arrayToReverse);
+console.log("1.",arrayToReverse);
 
 
 
@@ -26,7 +26,7 @@ for(i=1;i<findLargest.length;i++){
         biggest = findLargest[i];
     }
 }
-console.log(biggest);
+console.log("2.",biggest);
 
 /* EXTRA 3
  Write a piece of code for getting the minimum numerical value from an array.
@@ -39,7 +39,7 @@ for(i=1;i<findSmallest.length;i++){
         smallest = findSmallest[i];
     }
 }
-console.log(smallest);
+console.log("3.",smallest);
 
 /* EXTRA 4
  Write a piece of code for getting only even numerical values from an array.
@@ -53,7 +53,7 @@ for(i=0;i<findingArray.length;i++){
         evenNumbers.push(findingArray[i]);
     }
 }
-console.log(evenNumbers);
+console.log("4.",evenNumbers);
 
 /* EXTRA 5
  Write a piece of code for deleting only even entries from an array.
@@ -61,12 +61,14 @@ console.log(evenNumbers);
 
 let deleteFromArray = [0,1,2,3,4,5,6,7,8,9,10,32,34,36,38,40,12,14,16,18,20,11,13];
 let lengthOfArray = deleteFromArray.length;
-for(i=0;lengthOfArray;i++){
-    if(deleteFromArray[i]%2===0){
-        deleteFromArray.splice(i,1);
+let tempArray = []
+for(i=0;i<lengthOfArray;i++){
+    if(deleteFromArray[i]%2===1){
+        tempArray.push(deleteFromArray[i]);
     }
 }
-console.log("delete from array",deleteFromArray);
+deleteFromArray = tempArray;
+console.log("5.", deleteFromArray);
 
 
 /* EXTRA 6
@@ -81,7 +83,7 @@ for(i=0;i<lengthOfString;i++){
     removeFromString = removeFromString.replace('o','');
     removeFromString = removeFromString.replace('u','');
 }
-console.log("letters remaining after removal:",removeFromString);
+console.log("6. letters remaining after removal:",removeFromString);
 
 
 /* EXTRA 7
@@ -91,7 +93,7 @@ let increaseArray = [0,1,2,3,4];
 for(i=0;i<increaseArray.length;i++){
     increaseArray[i] +=1;
 }
-console.log(increaseArray);
+console.log("7.",increaseArray);
 
 /* EXTRA 8 
  Replace all the strings contained in an array with their length.
@@ -104,4 +106,4 @@ for(let i=0;i<stringArray.length;i++){
     stringArray[i] = stringArray[i].length;
 }
 
-console.log(stringArray);
+console.log("8.",stringArray);
