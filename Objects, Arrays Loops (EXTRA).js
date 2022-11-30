@@ -5,8 +5,8 @@
  es:
  [1, 3, 5] ==> [5, 3, 1]
 */
-let arrayToReverse = [1,3,5,7,9,2,4];
-for(i=0;i<parseInt(arrayToReverse.length/2);i++){
+let arrayToReverse = [1,3,5,7,9,2,14];
+for(i=0;i<arrayToReverse.length/2;i++){
     temp = arrayToReverse[i];
     arrayToReverse[i]=arrayToReverse[arrayToReverse.length-i-1];
     arrayToReverse[arrayToReverse.length-i-1]=temp;

@@ -175,5 +175,7 @@ console.log(totalCars);
 */
 
 for(let i=0;i<carsForSale.length;i++){
-    console.log(carsForSale[i]);
+    console.log(carsForSale[i].brand,carsForSale[i].model,carsForSale[i].licensePlate);
+    
+    
 }
