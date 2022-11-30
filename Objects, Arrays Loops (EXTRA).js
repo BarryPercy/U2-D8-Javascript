@@ -60,12 +60,13 @@ console.log(evenNumbers);
 */
 
 let deleteFromArray = [0,1,2,3,4,5,6,7,8,9,10,32,34,36,38,40,12,14,16,18,20,11,13];
-for(i=0;i<deleteFromArray.length;i++){
+let lengthOfArray = deleteFromArray.length;
+for(i=0;lengthOfArray;i++){
     if(deleteFromArray[i]%2===0){
         deleteFromArray.splice(i,1);
     }
 }
-console.log(deleteFromArray);
+console.log("delete from array",deleteFromArray);
 
 
 /* EXTRA 6
