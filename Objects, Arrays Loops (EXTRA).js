@@ -7,7 +7,7 @@
 */
 let arrayToReverse = [1,3,5,7,9,2,14];
 for(i=0;i<arrayToReverse.length/2;i++){
-    temp = arrayToReverse[i];
+    let temp = arrayToReverse[i];
     arrayToReverse[i]=arrayToReverse[arrayToReverse.length-i-1];
     arrayToReverse[arrayToReverse.length-i-1]=temp;
 }
